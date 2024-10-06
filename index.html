@@ -8,19 +8,50 @@
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <h1>World Clock</h1>
-    <footer>
-      <p>
-        This project was coded by
-        <a href="https://github.com/MaedehJedari" target="_blank"
-          >Maedeh Jedari</a
-        >
-        , is
-        <a href="" target="_blank"> open-sourced on GitHub</a>
-        and hosted
-        <a href="https://render.com/" target="_blank">on Render</a>
-      </p>
-    </footer>
+    <div class="whole">
+      <h1>World Clocks</h1>
+      <form action="/submit">
+        <select name="city-name" id="cities">
+          <option value="">Select a city</option>
+          <option value="America/Losangeles">Los angeles</option>
+          <option value="Australia/Sydney">Sydney</option>
+          <option value="Asia/Tokyo">Tokyo</option>
+          <option value="Europe/Paris">Paris</option>
+        </select>
+      </form>
+      <div class="World-cities">
+        <h2>Los Angeles</h2>
+        <div class="date">10/6/2024</div>
+        <div class="time">9:38</div>
+      </div>
+      <div class="World-cities">
+        <h2>Sydney</h2>
+        <div class="date">10/6/2024</div>
+        <div class="time">9:38</div>
+      </div>
+      <div class="World-cities">
+        <h2>Tokyo</h2>
+        <div class="date">10/6/2024</div>
+        <div class="time">9:38</div>
+      </div>
+      <div class="World-cities">
+        <h2>Paris</h2>
+        <div class="date">10/6/2024</div>
+        <div class="time">9:38</div>
+      </div>
+      <footer>
+        <p>
+          This project was coded by
+          <a href="https://github.com/MaedehJedari" target="_blank"
+            >Maedeh Jedari</a
+          >
+          , is
+          <a href="" target="_blank"> open-sourced on GitHub</a>
+          and hosted
+          <a href="https://render.com/" target="_blank">on Render</a>
+        </p>
+      </footer>
+    </div>
     <script src="src/script.js"></script>
   </body>
 </html>
