@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Clock</title>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
@@ -19,33 +20,33 @@
           <option value="Europe/Paris">Paris</option>
         </select>
       </form>
-      <div class="World-cities">
+      <div class="World-cities" id="Losangeles">
         <div>
           <h2>Los Angeles</h2>
-          <div class="date">10/7/2024</div>
+          <div class="date"></div>
         </div>
-        <div class="time">9:38:15<small>AM</small></div>
+        <div class="time"></div>
       </div>
-      <div class="World-cities">
+      <div class="World-cities" id="Sydney">
         <div>
           <h2>Sydney</h2>
-          <div class="date">10/7/2024</div>
+          <div class="date"></div>
         </div>
-        <div class="time">9:38:15<small>AM</small></div>
+        <div class="time"></div>
       </div>
-      <div class="World-cities">
+      <div class="World-cities" id="Tokyo">
         <div>
           <h2>Tokyo</h2>
-          <div class="date">10/7/2024</div>
+          <div class="date"></div>
         </div>
-        <div class="time">9:38:15<small>AM</small></div>
+        <div class="time"></div>
       </div>
-      <div class="World-cities">
+      <div class="World-cities" id="Paris">
         <div>
           <h2>Paris</h2>
-          <div class="date">10/7/2024</div>
+          <div class="date"></div>
         </div>
-        <div class="time">9:38:15<small>AM</small></div>
+        <div class="time"></div>
       </div>
     </div>
     <footer>
@@ -61,7 +62,7 @@
         and hosted
         <strong
           ><a href="https://render.com/" target="_blank">on Render</a></strong
-        >
+        >.
       </p>
     </footer>
 
