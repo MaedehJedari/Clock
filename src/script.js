@@ -43,8 +43,14 @@ setInterval(function () {
     "h:mm:ss [<small>]A[</small>]"
   )}`;
 }, 1000);
+let citiesSelect = document.querySelector("#cities");
+citiesSelect.addEventListener("change", updateCity);
+
 function updateCity(event) {
   let cityTimeZone = event.target.value;
+  if (cityTimeZone === "current") {
+    cityTimeZone = moment.tz.guess();
+  }
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
   let cityTime = moment().tz(cityTimeZone);
   let citiesElement = document.querySelector("#whole-cities");
@@ -59,6 +65,3 @@ function updateCity(event) {
         )}</div>
       </div>`;
 }
-
-let citiesSelect = document.querySelector("#cities");
-citiesSelect.addEventListener("change", updateCity);
